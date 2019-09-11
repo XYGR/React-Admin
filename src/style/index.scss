@@ -1,0 +1,65 @@
+@import "variables";
+@import "banner";
+@import "login";
+@import "menu";
+@import "modal";
+@import "scroll";
+@import "global";
+@import "utils-border";
+@import "utils-color";
+@import "utils-size";
+@import "utils-spacing";
+@import "utils-text";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#root{
+    height: 100%;
+}
+.ant-layout{
+    height: 100%;
+    .logo{
+        height: 32px;
+        background: #ffffff;
+        border-radius: 6px;
+        margin: 16px;
+    }
+    .ant-layout-sider-collapsed{
+        .anticon{
+            font-size: 16px;
+        }
+        .nav-text{
+            display: none;
+        }
+        .ant-menu-submenu-vertical > .ant-menu-submenu-title:after{
+            display: none;
+        }
+        .ant-menu-dark:not(.ant-menu-inline) .ant-menu-submenu-open {
+            color: inherit;
+        }
+    }
+    p {
+        margin: 10px 0 10px 0;
+    }
+}
+.gutter-example{
+    .ant-row{
+        >div{
+            background: transparent;
+            border: 0;
+        }
+    }
+}
+.gutter-box {
+    padding: 5px 0;
+}
+
+:global {
+    .ant-card-head-title {
+        font-size: 14px !important;
+    }
+}
